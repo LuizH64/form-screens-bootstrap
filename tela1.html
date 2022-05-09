@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tela 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./tela1.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./scripts.js"></script>
+</head>
+
+<body class="m-0">
+    <div id="header-wrapper" class="d-flex justify-content-center align-items-end">
+        <section id="header" class="d-flex flex-column justify-content-evenly text-center font-darkgray">
+            <div>
+                <h1 class="font-24 font-red m-0 fw-bold">Cadastre-se Gratuitamente</h1>
+                <p class="font-18">e tenha um plano vitalício com</p>
+            </div>
+
+            <div class="row px-4">
+                <div class="col-4 border-end">
+                    <p class="font-18 font-red fw-bold">1000</p>
+                    <p class="font-11">impressões</p>
+                </div>
+                <div class="col-4 border-end">
+                    <p class="font-18 font-red fw-bold">1GB</p>
+                    <p class="font-11">de espaço</p>
+                </div>
+                <div class="col-4">
+                    <p class="font-18 font-red fw-bold">3</p>
+                    <p class="font-11">usuários</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="d-flex flex-column justify-content-center align-items-end">
+        <div id="progressbar-wrapper" class="container pt-3 px-0">
+            <ul id="progressbar" class="font-10 text-center" style="--percentage: 1%;">
+                <li class="active">Digite seus dados</li>
+                <li>Selecione suas necessidade</li>
+                <li>Finalizar cadastro</li>
+            </ul>
+        </div>
+
+        <form id="form" class="container p-0 font-14 font-darkgray">
+            <label for="nome" class="form-label m-0">Nome</label>
+            <input id="nome" type="text" class="form-control mb-2">
+
+            <label for="email" class="form-label m-0">Email</label>
+            <input id="email" type="email" class="form-control mb-2">
+
+            <label for="senha" class="form-label m-0">Senha</label>
+            <input id="senha" type="password" class="form-control mb-2">
+
+            <label for="dominio" class="form-label m-0">Domínio</label>
+            <div class="input-group mb-2">
+                <input id="dominio" type="text" class="form-control">
+                <span class="input-group-text font-14">.selbetti.com.br</span>
+            </div>
+
+            <label for="ddd-1" class="form-label m-0">Telefone</label>
+            <div class="input-group gap-2 mb-4">
+                <input id="ddd-1" type="text" class="form-control w-20" maxlength="2" oninput="allowOnlyNumbers(this)"
+                    onkeyup="verifyMoveNext(event)">
+                <input id="ddd-2" type="text" class="form-control w-20" maxlength="2" oninput="allowOnlyNumbers(this)"
+                    onkeyup="verifyMoveNext(event)">
+                <input id="telefone" type="text" class="form-control w-50" maxlength="9"
+                    oninput="allowOnlyNumbers(this)">
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="receber-novidades" checked>
+                    <label class="form-check-label font-10 font-darkgray ps-1" for="receber-novidades">
+                        Concordo em receber novidades sobre a Selbetti via email
+                    </label>
+                </div>
+
+                <button class="btn btn-secondary ms-3 font-14">Continuar</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

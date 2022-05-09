@@ -1,0 +1,142 @@
+$red: hsl(5, 62%, 48%);
+
+body {
+    background-color: #f3f3f3;
+}
+
+.font-10 {
+    font-size: clamp(8px, 0.51vw, 10px);
+}
+
+.font-11 {
+    font-size: clamp(9px, 0.57vw, 11px);
+}
+
+.font-14 {
+    font-size: clamp(11px, 0.72vw, 14px);
+}
+
+.font-18 {
+    font-size: clamp(14px, 0.93vw, 18px);
+}
+
+.font-24 {
+    font-size: clamp(18px, 1.25vw, 24px);
+}
+
+.font-darkgray {
+    color: #9c9b99;
+}
+
+.font-red {
+    color: $red;
+}
+
+#header-wrapper {
+    background-color: $red;
+    height: 22vh;
+
+    #header {
+        width: 23.4%;
+        height: 77%;
+        background-color: #fff;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+#form {
+    width: 16.9%;
+
+    .form-control {
+        border-color: #e5e5e5;
+        border-radius: 2px;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.btn {
+    background-color: #707070;
+    border-radius: 2px;
+    padding: min(15.5%, 18px) min(24%, 27px);
+}
+
+.form-check-input {
+    position: relative;
+    background-color: #fff;
+    width: 1rem;
+    height: 1rem;
+    border: 0;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &:checked {
+        background-color: #fff;
+
+        &:before {
+            content: "\2713";
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: hsl(0, 0%, 53%);
+            transform: translate(50%, -50%);
+        }
+    }
+}
+
+#progressbar-wrapper {
+    width: 20%;
+
+    #progressbar {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        list-style: none;
+        padding: 0;
+        padding-top: 20px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: calc(100% - 60px);
+            right: 50%;
+            height: 3px;
+            background: linear-gradient(to right, $red var(--percentage), #707070 0);
+            transform: translate(50%, -8px);
+        }
+
+        li {
+            position: relative;
+            max-width: 60px;
+
+            &:before {
+                content: "";
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #707070;
+                position: absolute;
+                right: 50%;
+                transform: translate(50%, -15px);
+            }
+
+            &.active {
+                color: $red;
+                font-weight: bold;
+
+                &:before {
+                    background-color: $red;
+                }
+            }
+        }
+    }
+}
