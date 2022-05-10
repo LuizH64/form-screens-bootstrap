@@ -1,0 +1,46 @@
+.card {
+  border: 0;
+  line-height: 10px;
+  border: 1px solid transparent;
+  color: #707070;
+}
+
+label.card {
+  cursor: pointer;
+}
+
+.check {
+  display: none;
+}
+.check:checked + label {
+  border: 1px solid #c83d2f;
+}
+
+#custom-input {
+  border: 0;
+  border-bottom: 1px solid #989898;
+  padding-bottom: 2px;
+}
+#custom-input:focus {
+  outline: none;
+}
+#custom-input::placeholder {
+  color: #989898;
+  text-align: center;
+}
+
+.btn {
+  padding: min(15.5%, 18px) min(24%, 27px);
+  border-radius: 2px;
+  font-size: clamp(11px, 0.72vw, 14px);
+}
+.btn.btn-danger {
+  background-color: #c83d2f;
+}
+.btn.btn-outline-secondary {
+  color: #707070;
+  border-color: #707070;
+}
+.btn.btn-outline-secondary:hover {
+  color: #fff;
+}

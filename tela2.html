@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tela 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./tela2.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./scripts.js"></script>
+</head>
+
+<body class="m-0">
+    <div id="header-wrapper" class="d-flex justify-content-center align-items-end">
+        <section id="header" class="d-flex flex-column justify-content-evenly text-center font-darkgray">
+            <div>
+                <h1 class="font-24 font-red m-0 fw-bold">Cadastre-se Gratuitamente</h1>
+                <p class="font-18">e tenha um plano vitalício com</p>
+            </div>
+
+            <div class="row px-4">
+                <div class="col-4 border-end">
+                    <p class="font-18 font-red fw-bold">1000</p>
+                    <p class="font-11">impressões</p>
+                </div>
+                <div class="col-4 border-end">
+                    <p class="font-18 font-red fw-bold">1GB</p>
+                    <p class="font-11">de espaço</p>
+                </div>
+                <div class="col-4">
+                    <p class="font-18 font-red fw-bold">3</p>
+                    <p class="font-11">usuários</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="main-wraper" class="d-flex flex-column justify-content-center align-items-end shadow pb-4">
+        <div class="container pt-3 px-3">
+            <ul id="progressbar" class="font-10 text-center" style="--percentage: 50%;">
+                <li class="active">Digite seus dados</li>
+                <li class="active">Selecione suas necessidade</li>
+                <li>Finalizar cadastro</li>
+            </ul>
+        </div>
+
+        <form id="form" class="container px-5 font-12 font-darkgray">
+            <div class="row px-1 mb-2 text-center font-14">
+                Selecione uma ou mais necessidades para pré-configurarmos o sistema para você
+            </div>
+
+            <div class="row text-center mb-2 user-select-none">
+                <div class="col-4 px-1">
+                    <input id="recursos-humanos" class="check" type="checkbox" />
+                    <label for="recursos-humanos"
+                        class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                        <div>
+                            <img class="w-100" src="./images/grupo-130.svg" draggable="false" />
+                        </div>
+
+                        <span>Recursos Humanos</span>
+                    </label>
+                </div>
+                <div class="col-4 px-1">
+                    <input id="financeiro" class="check" type="checkbox" />
+                    <label for="financeiro" class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                        <div>
+                            <img class="w-100" src="./images/grupo-132.svg" draggable="false" />
+                        </div>
+
+                        <span>Financeiro</span>
+                    </label>
+                </div>
+                <div class="col-4 px-1">
+                    <input id="atendimento" class="check" type="checkbox" />
+                    <label for="atendimento" class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                        <div>
+                            <img class="w-100" src="./images/grupo-131.svg" draggable="false" />
+                        </div>
+
+                        <span>Atendimento</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row text-center mb-2 user-select-none">
+                <div class="col-4 px-1">
+                    <input id="juridico" class="check" type="checkbox" />
+                    <label for="juridico" class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                        <div>
+                            <img class="w-100" src="./images/grupo-135.svg" draggable="false" />
+                        </div>
+
+                        <span>Jurídico</span>
+                    </label>
+                </div>
+                <div class="col-4 px-1">
+                    <input id="logistica" class="check" type="checkbox" />
+                    <label for="logistica" class="card d-flex gap-2 justify-content-between h-100 px-2 pt-4 pb-2">
+                        <div>
+                            <img class="w-100" src="./images/grupo-136.svg" draggable="false" />
+                        </div>
+
+                        <span>Logística</span>
+                    </label>
+                </div>
+                <div class="col-4 px-1">
+                    <input id="educacao" class="check" type="checkbox" />
+                    <label for="educacao" class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                        <div>
+                            <img class="w-100" src="./images/grupo-133.svg" draggable="false" />
+                        </div>
+
+                        <span>Educação</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row text-center user-select-none mb-3">
+                <div class="col-4 px-1">
+                    <input id="saude" class="check" type="checkbox" />
+                    <label for="saude" class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                        <div>
+                            <img class="w-100" src="./images/grupo-134.svg" draggable="false" />
+                        </div>
+
+                        <span>Saúde</span>
+                    </label>
+                </div>
+                <div class="col-8 px-1">
+                    <div class="card d-flex gap-2 justify-content-between h-100 px-2 pt-4 pb-2">
+                        <div class="py-2">
+                            <input id="custom-input" placeholder="Digite um segmento" />
+                        </div>
+
+                        <span>Outro</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 p-0 pe-1">
+                    <button class="btn btn-outline-secondary w-100 h-100">Voltar</button>
+                </div>
+                <div class="col-8 p-0 ps-1">
+                    <button class="btn btn-danger w-100">Criar minha conta</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>

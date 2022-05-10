@@ -1,0 +1,54 @@
+$red: #c83d2f;
+
+.card {
+    border: 0;
+    line-height: 10px;
+    border: 1px solid transparent;
+    color: #707070;
+}
+
+label.card {
+    cursor: pointer;
+}
+
+.check {
+    display: none;
+
+    &:checked + label {
+        border: 1px solid $red;
+    }
+}
+
+#custom-input {
+    border: 0;
+    border-bottom: 1px solid #989898;
+    padding-bottom: 2px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: #989898;
+        text-align: center;
+    }
+}
+
+.btn {
+    padding: min(15.5%, 18px) min(24%, 27px);
+    border-radius: 2px;
+    font-size: clamp(11px, 0.72vw, 14px);
+
+    &.btn-danger {
+        background-color: $red;
+    }
+
+    &.btn-outline-secondary {
+        color: #707070;
+        border-color: #707070;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
