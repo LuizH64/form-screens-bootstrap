@@ -130,3 +130,28 @@ body {
   color: #878787;
   transform: translate(50%, -50%);
 }
+
+.my-tooltip {
+  position: relative;
+  padding: 0 3px;
+  border-radius: 50%;
+  background-color: #9c9b99;
+  color: #f9f9f9;
+  font-weight: bold;
+  font-size: clamp(8px, 0.51vw, 10px);
+  cursor: default;
+}
+.my-tooltip:hover::after {
+  content: attr(tooltip);
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  min-width: 100px;
+  max-width: 200px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #000;
+  text-align: center;
+  transform: translate(10%, -50%);
+}
