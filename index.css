@@ -18,6 +18,10 @@ body {
   font-size: clamp(11px, 0.72vw, 14px);
 }
 
+.font-16 {
+  font-size: clamp(14px, 0.83vw, 16px);
+}
+
 .font-18 {
   font-size: clamp(14px, 0.93vw, 18px);
 }
@@ -28,6 +32,10 @@ body {
 
 .font-darkgray {
   color: #9c9b99;
+}
+
+.font-lightgray {
+  color: #707070;
 }
 
 .font-red {
@@ -47,7 +55,7 @@ body {
   margin: 0;
 }
 
-#main-wraper {
+#main-wrapper {
   background-color: #f9f9f9;
   margin: 0 38.2%;
 }
@@ -89,4 +97,20 @@ body {
 }
 #progressbar li.active:before {
   background-color: #c63b2f;
+}
+
+.btn {
+  padding: min(15.5%, 18px) min(24%, 27px);
+  border-radius: 2px;
+  font-size: clamp(11px, 0.72vw, 14px);
+}
+.btn.btn-danger {
+  background-color: #c63b2f;
+}
+.btn.btn-outline-secondary {
+  color: #707070;
+  border-color: #707070;
+}
+.btn.btn-outline-secondary:hover {
+  color: #fff;
 }
