@@ -18,7 +18,8 @@
     <script>
         /* COMENTE A FUNÇÃO ABAIXO PARA NÃO SER REDIRECIONADO */
         setTimeout(() => {
-            window.location.href = '/tela4.html';
+            if (window.location.pathname.includes('form-screens-bootstrap')) window.location.href = '/form-screens-bootstrap/tela4.html';
+            else window.location.href = 'tela4.html';
         }, 2000);
     </script>
 </head>

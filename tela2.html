@@ -22,7 +22,11 @@
             const checkboxes = document.querySelectorAll('input[type=checkbox]');
             const checks = [];
             checkboxes.forEach(c => checks.push(c.checked));
-            if (checks.some(checked => checked) || customInputValue) window.location.href = 'tela3.html'; return false;
+            if (checks.some(checked => checked) || customInputValue) {
+                if (window.location.pathname.includes('form-screens-bootstrap')) window.location.href = '/form-screens-bootstrap/tela3.html';
+                else window.location.href = 'tela3.html';
+                return false;
+            }
         };
     </script>
 </head>
