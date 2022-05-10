@@ -7,4 +7,4 @@ const verifyMoveNext = event => {
         const NEXT_ELEMENT = event.target.nextElementSibling;
         NEXT_ELEMENT?.focus();
     }
-};
+}

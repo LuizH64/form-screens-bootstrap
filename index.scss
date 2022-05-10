@@ -111,18 +111,38 @@ body {
 .btn {
     padding: min(15.5%, 18px) min(24%, 27px);
     border-radius: 2px;
-    font-size: clamp(11px, 0.72vw, 14px);
+    font-size: 14px;
 
     &.btn-danger {
         background-color: $red;
     }
 
     &.btn-outline-secondary {
+        display: flex;
+        align-items: center;
         color: #707070;
         border-color: #707070;
 
         &:hover {
             color: #fff;
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #header-wrapper {
+        height: auto;
+
+        #header {
+            width: 100vw;
+            padding: 4% 0;
+        }
+    }
+    #main-wrapper {
+        margin: 0;
     }
 }

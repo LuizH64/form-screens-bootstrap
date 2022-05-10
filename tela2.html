@@ -14,6 +14,17 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="./scripts.js"></script>
+    <script>
+        const submitHandler = event => {
+            event.preventDefault();
+
+            const customInputValue = document.getElementById('custom-input').value;
+            const checkboxes = document.querySelectorAll('input[type=checkbox]');
+            const checks = [];
+            checkboxes.forEach(c => checks.push(c.checked));
+            if (checks.some(checked => checked) || customInputValue) window.location.href = '/tela3.html'; return false;
+        };
+    </script>
 </head>
 
 <body class="m-0">
@@ -59,7 +70,7 @@
                 <div class="col-4 px-1">
                     <input id="recursos-humanos" class="check" type="checkbox" />
                     <label for="recursos-humanos"
-                        class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                        class="card d-flex gap-2 justify-content-between h-100 px-3 pt-3 pb-2">
                         <div>
                             <img class="w-100" src="./images/grupo-130.svg" draggable="false" />
                         </div>
@@ -69,7 +80,7 @@
                 </div>
                 <div class="col-4 px-1">
                     <input id="financeiro" class="check" type="checkbox" />
-                    <label for="financeiro" class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                    <label for="financeiro" class="card d-flex gap-2 justify-content-between h-100 px-3 pt-3 pb-2">
                         <div>
                             <img class="w-100" src="./images/grupo-132.svg" draggable="false" />
                         </div>
@@ -79,7 +90,7 @@
                 </div>
                 <div class="col-4 px-1">
                     <input id="atendimento" class="check" type="checkbox" />
-                    <label for="atendimento" class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                    <label for="atendimento" class="card d-flex gap-2 justify-content-between h-100 px-3 pt-3 pb-2">
                         <div>
                             <img class="w-100" src="./images/grupo-131.svg" draggable="false" />
                         </div>
@@ -92,7 +103,7 @@
             <div class="row text-center mb-2 user-select-none">
                 <div class="col-4 px-1">
                     <input id="juridico" class="check" type="checkbox" />
-                    <label for="juridico" class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                    <label for="juridico" class="card d-flex gap-2 justify-content-between h-100 px-3 pt-3 pb-2">
                         <div>
                             <img class="w-100" src="./images/grupo-135.svg" draggable="false" />
                         </div>
@@ -112,7 +123,7 @@
                 </div>
                 <div class="col-4 px-1">
                     <input id="educacao" class="check" type="checkbox" />
-                    <label for="educacao" class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                    <label for="educacao" class="card d-flex gap-2 justify-content-between h-100 px-3 pt-3 pb-2">
                         <div>
                             <img class="w-100" src="./images/grupo-133.svg" draggable="false" />
                         </div>
@@ -125,7 +136,7 @@
             <div class="row text-center user-select-none mb-3">
                 <div class="col-4 px-1">
                     <input id="saude" class="check" type="checkbox" />
-                    <label for="saude" class="card d-flex gap-2 justify-content-between h-100 px-2 pt-3 pb-2">
+                    <label for="saude" class="card d-flex gap-2 justify-content-between h-100 px-3 pt-3 pb-2">
                         <div>
                             <img class="w-100" src="./images/grupo-134.svg" draggable="false" />
                         </div>
@@ -146,10 +157,11 @@
 
             <div class="row">
                 <div class="col-4 p-0 pe-1">
-                    <button class="btn btn-outline-secondary w-100 h-100">Voltar</button>
+                    <a class="btn btn-outline-secondary w-100 h-100" href='/tela1.html'>Voltar</a>
                 </div>
                 <div class="col-8 p-0 ps-1">
-                    <button class="btn btn-danger w-100">Criar minha conta</button>
+                    <button type="submit" class="btn btn-danger w-100" onclick="submitHandler(event)">Criar minha
+                        conta</button>
                 </div>
             </div>
         </form>
