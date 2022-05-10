@@ -22,7 +22,7 @@
             const checkboxes = document.querySelectorAll('input[type=checkbox]');
             const checks = [];
             checkboxes.forEach(c => checks.push(c.checked));
-            if (checks.some(checked => checked) || customInputValue) window.location.href = '/tela3.html'; return false;
+            if (checks.some(checked => checked) || customInputValue) window.location.href = 'tela3.html'; return false;
         };
     </script>
 </head>
@@ -157,7 +157,7 @@
 
             <div class="row">
                 <div class="col-4 p-0 pe-1">
-                    <a class="btn btn-outline-secondary w-100 h-100" href='/index.html'>Voltar</a>
+                    <a class="btn btn-outline-secondary w-100 h-100" href='index.html'>Voltar</a>
                 </div>
                 <div class="col-8 p-0 ps-1">
                     <button type="submit" class="btn btn-danger w-100" onclick="submitHandler(event)">Criar minha
