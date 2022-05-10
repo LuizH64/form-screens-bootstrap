@@ -1,0 +1,13 @@
+#spinner-wrapper {
+    min-height: 60vh;
+
+    .spinner-border {
+        width: 100px;
+        min-height: 100px;
+        border-width: 13px;
+    }
+
+    span {
+        line-height: 18px;
+    }
+}

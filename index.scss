@@ -33,7 +33,7 @@ body {
 }
 
 .font-red {
-    color: $red;
+    color: $red !important;
 }
 
 #header-wrapper {
@@ -90,7 +90,7 @@ body {
         }
 
         &.active {
-            color: $red;
+            color: #bfbfbf;
             font-weight: bold;
 
             &:before {
